@@ -54,17 +54,19 @@ include_once('../includes/Config.php');
             echo "<br />";
              echo "Rozsah od: " . $data['start'] . " - do: ".$data['end'];
             
+            echo '<H3>Nepárne</H3> (pravá strana) - <em>väzba bude na ľavej strane</em>';
+        echo '<pre>';
+            // var_dump( $data );
+            echo $generovat->generateOddNumbers($data['start'],$data['end']);
+        echo '</pre>';
+            
         echo '<H3>Párne</H3> (ľavá strana) - <em>väzba bude na pravej strane</em> ';
         echo '<pre>';
             // var_dump( $data );
             echo $generovat->generateEvenNumbers($data['start'],$data['end']);
         echo '</pre>';
         
-        echo '<H3>Nepárne</H3> (pravá strana) - <em>väzba bude na ľavej strane</em>';
-        echo '<pre>';
-            // var_dump( $data );
-            echo $generovat->generateOddNumbers($data['start'],$data['end']);
-        echo '</pre>';
+        
   } );
             
                      

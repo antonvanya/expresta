@@ -16,7 +16,8 @@ include_once('../includes/Config.php');
     <link href="../css/styles.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-<h1> List of files </h1>
+<h1> Scripts for Expresta </h1>
+<h2> List of files </h2>
 
     <table class="content-table">
         <thead>
